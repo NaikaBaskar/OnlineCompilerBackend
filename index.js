@@ -34,6 +34,7 @@ app.post('/run',async (req,res)=>{
             console.log("--------------successfully compile---------------");
             console.log(result.final);
             let result2 = await main.run(code, input, language);
+            console.log(result2)
             if (result2.status === 0) {
                 console.log("error while running the code");
                 

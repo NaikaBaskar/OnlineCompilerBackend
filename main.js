@@ -5,7 +5,7 @@ var config = {};
 config.time_limit = 2;
 config.memory_limit = 323244;
 // config.input = "";
-config.language = "C++";
+config.language = "cpp";
 
 async function compile(code, input, language) {
     try {
@@ -21,7 +21,7 @@ async function compile(code, input, language) {
         }
     }
     catch (err) {
-        return { "status": 0, "final": result };
+        return { "status": 0, "final": err };
     }
 }
 
